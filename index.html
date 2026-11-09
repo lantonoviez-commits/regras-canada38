@@ -3,22 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CANADÁ ÁREA DE RISCO 38 • DIRETRIZES & REGRAS</title>
+  <title>CANADÁ ÁREA DE RISCO 38 • MANUAL DE REGRAS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
   <style>
     :root {
       --bg-main: #07080a;
       --bg-surface: #0e1015;
       --bg-card: rgba(18, 20, 26, 0.90);
-      --bg-card-hover: rgba(28, 32, 42, 0.98);
       --red-primary: #e61919;
       --red-bright: #ff2a2a;
       --red-glow: rgba(230, 25, 25, 0.5);
-      --red-dark: #660708;
       --gold-accent: #f59e0b;
       --text-main: #f3f4f6;
       --text-muted: #9ca3af;
@@ -28,13 +25,7 @@
       --font-tactical: 'Rajdhani', sans-serif;
       --font-body: 'Inter', sans-serif;
     }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background-color: var(--bg-main);
       color: var(--text-main);
@@ -47,560 +38,189 @@
         linear-gradient(rgba(7, 8, 10, 0.95), rgba(7, 8, 10, 0.95));
       background-attachment: fixed;
     }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      position: relative;
-      z-index: 2;
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 30px 20px 20px;
-    }
-
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+    header { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 30px 20px 20px; }
     .badge-status {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(230, 25, 25, 0.15);
-      border: 1px solid var(--red-primary);
-      padding: 6px 16px;
-      border-radius: 999px;
-      font-family: var(--font-tactical);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: #ff6b6b;
-      text-transform: uppercase;
-      margin-bottom: 20px;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(230, 25, 25, 0.15); border: 1px solid var(--red-primary);
+      padding: 6px 16px; border-radius: 999px; font-family: var(--font-tactical);
+      font-size: 14px; font-weight: 700; letter-spacing: 2px; color: #ff6b6b;
+      text-transform: uppercase; margin-bottom: 20px;
     }
-
     .badge-status .dot {
-      width: 8px;
-      height: 8px;
-      background: var(--red-bright);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--red-bright);
+      width: 8px; height: 8px; background: var(--red-bright);
+      border-radius: 50%; box-shadow: 0 0 8px var(--red-bright);
     }
-
     .logo-wrapper {
-      width: 180px;
-      height: 180px;
-      margin: 0 auto 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 220px; height: 220px; margin: 0 auto 15px;
+      display: flex; align-items: center; justify-content: center;
     }
-
     .logo-img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 16px;
-      filter: drop-shadow(0 0 15px rgba(230, 25, 25, 0.6));
+      width: 100%; height: 100%; object-fit: contain; border-radius: 16px;
+      filter: drop-shadow(0 0 20px rgba(230, 25, 25, 0.7));
     }
-
     .main-title {
-      font-family: var(--font-display);
-      font-size: clamp(26px, 4vw, 42px);
-      font-weight: 900;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #fff;
-      margin-bottom: 6px;
-      text-shadow: 0 0 20px rgba(230, 25, 25, 0.5);
+      font-family: var(--font-display); font-size: clamp(26px, 4vw, 42px);
+      font-weight: 900; letter-spacing: 3px; text-transform: uppercase;
+      color: #fff; margin-bottom: 6px; text-shadow: 0 0 20px rgba(230, 25, 25, 0.5);
     }
-
     .sub-title {
-      font-family: var(--font-tactical);
-      font-size: clamp(15px, 2vw, 18px);
-      letter-spacing: 2px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      font-weight: 600;
+      font-family: var(--font-tactical); font-size: clamp(15px, 2vw, 18px);
+      letter-spacing: 2px; color: var(--text-muted); text-transform: uppercase; font-weight: 600;
     }
-
     .quick-stats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      margin: 25px 0 20px;
-      width: 100%;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px; margin: 25px 0 20px; width: 100%;
     }
-
     .stat-pill {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-left: 3px solid var(--red-primary);
-      padding: 12px 16px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--red-primary); padding: 12px 16px; border-radius: 8px;
+      display: flex; align-items: center; gap: 12px;
     }
-
-    .stat-pill i {
-      font-size: 22px;
-      color: var(--red-bright);
-    }
-
+    .stat-pill i { font-size: 22px; color: var(--red-bright); }
     .stat-pill .info .label {
-      font-size: 11px;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      font-family: var(--font-tactical);
-      font-weight: 700;
+      font-size: 11px; text-transform: uppercase; color: var(--text-muted);
+      font-family: var(--font-tactical); font-weight: 700;
     }
-
     .stat-pill .info .value {
-      font-size: 15px;
-      font-family: var(--font-display);
-      font-weight: 700;
-      color: #fff;
+      font-size: 15px; font-family: var(--font-display); font-weight: 700; color: #fff;
     }
-
     .nav-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      margin: 20px 0 30px;
-      background: rgba(14, 16, 21, 0.95);
-      padding: 8px;
-      border-radius: 12px;
-      border: 1px solid var(--border-subtle);
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;
+      margin: 20px 0 30px; background: rgba(14, 16, 21, 0.95); padding: 8px;
+      border-radius: 12px; border: 1px solid var(--border-subtle);
     }
-
     .nav-btn {
-      background: transparent;
-      border: 1px solid transparent;
-      color: var(--text-muted);
-      font-family: var(--font-tactical);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 10px 18px;
-      border-radius: 8px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      background: transparent; border: 1px solid transparent; color: var(--text-muted);
+      font-family: var(--font-tactical); font-size: 14px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase; padding: 10px 18px;
+      border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px;
       transition: all 0.2s ease;
     }
-
-    .nav-btn:hover {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.05);
-    }
-
+    .nav-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.05); }
     .nav-btn.active {
-      background: var(--red-primary);
-      color: #fff;
-      box-shadow: 0 0 12px var(--red-glow);
+      background: var(--red-primary); color: #fff; box-shadow: 0 0 12px var(--red-glow);
     }
-
-    .tab-content {
-      display: none;
-    }
-
-    .tab-content.active {
-      display: block;
-    }
-
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
     .section-title {
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      color: #fff;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      font-family: var(--font-display); font-size: 20px; font-weight: 700;
+      letter-spacing: 1.5px; color: #fff; text-transform: uppercase;
+      margin-bottom: 20px; border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 10px; display: flex; align-items: center; gap: 10px;
     }
-
-    .section-title i {
-      color: var(--red-bright);
-    }
-
+    .section-title i { color: var(--red-bright); }
     .rules-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 14px;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px;
     }
-
     .rule-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-left: 3px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 16px;
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--border-subtle); border-radius: 10px; padding: 16px;
     }
-
     .rule-card.danger {
       border-left-color: var(--red-bright);
       background: linear-gradient(180deg, rgba(230, 25, 25, 0.1) 0%, rgba(18, 20, 26, 0.95) 100%);
     }
-
-    .rule-card.warning {
-      border-left-color: var(--gold-accent);
-    }
-
-    .rule-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 8px;
-    }
-
-    .rule-number {
-      font-family: var(--font-display);
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--red-bright);
-    }
-
+    .rule-card.warning { border-left-color: var(--gold-accent); }
+    .rule-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+    .rule-number { font-family: var(--font-display); font-size: 12px; font-weight: 700; color: var(--red-bright); }
     .rule-tag {
-      font-family: var(--font-tactical);
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 2px 6px;
-      border-radius: 4px;
+      font-family: var(--font-tactical); font-size: 11px; font-weight: 700;
+      text-transform: uppercase; padding: 2px 6px; border-radius: 4px;
     }
-
-    .tag-ban {
-      background: #7f1d1d;
-      color: #fecaca;
-    }
-
-    .tag-pd {
-      background: #881337;
-      color: #fecdd3;
-    }
-
-    .tag-adv {
-      background: #78350f;
-      color: #fde68a;
-    }
-
-    .tag-norm {
-      background: #1e293b;
-      color: #94a3b8;
-    }
-
-    .rule-text {
-      font-size: 14px;
-      line-height: 1.5;
-      color: #d1d5db;
-    }
-
-    .rule-text strong {
-      color: #fff;
-    }
-
+    .tag-ban { background: #7f1d1d; color: #fecaca; }
+    .tag-pd { background: #881337; color: #fecdd3; }
+    .tag-adv { background: #78350f; color: #fde68a; }
+    .tag-norm { background: #1e293b; color: #94a3b8; }
+    .rule-text { font-size: 14px; line-height: 1.5; color: #d1d5db; }
+    .rule-text strong { color: #fff; }
     .bau-hero {
-      background: var(--bg-card);
-      border: 1px solid var(--border-red);
-      border-left: 4px solid var(--red-bright);
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 20px;
+      background: var(--bg-card); border: 1px solid var(--border-red);
+      border-left: 4px solid var(--red-bright); border-radius: 12px; padding: 20px; margin-bottom: 20px;
     }
-
     .bau-hero h3 {
-      font-family: var(--font-display);
-      font-size: 18px;
-      color: #ff4d4d;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      font-family: var(--font-display); font-size: 18px; color: #ff4d4d;
+      margin-bottom: 8px; display: flex; align-items: center; gap: 8px;
     }
-
-    .bau-hero p {
-      color: #e5e7eb;
-      font-size: 14.5px;
-      line-height: 1.6;
-    }
-
+    .bau-hero p { color: #e5e7eb; font-size: 14.5px; line-height: 1.6; }
     .cotas-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 14px;
-      margin: 20px 0;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 20px 0;
     }
-
     .cota-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      padding: 16px;
-      text-align: center;
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-radius: 10px; padding: 16px; text-align: center;
     }
-
-    .cota-card i {
-      font-size: 28px;
-      color: var(--gold-accent);
-      margin-bottom: 8px;
-    }
-
+    .cota-card i { font-size: 28px; color: var(--gold-accent); margin-bottom: 8px; }
     .cota-card .item-name {
-      font-family: var(--font-tactical);
-      font-size: 16px;
-      font-weight: 700;
-      color: #fff;
-      text-transform: uppercase;
+      font-family: var(--font-tactical); font-size: 16px; font-weight: 700; color: #fff; text-transform: uppercase;
     }
-
     .cota-card .item-limit {
-      font-family: var(--font-display);
-      font-size: 24px;
-      font-weight: 900;
-      color: var(--red-bright);
-      margin: 6px 0;
+      font-family: var(--font-display); font-size: 24px; font-weight: 900; color: var(--red-bright); margin: 6px 0;
     }
-
-    .cota-card .item-desc {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
+    .cota-card .item-desc { font-size: 12px; color: var(--text-muted); }
     .proibidos-box {
-      background: rgba(127, 29, 29, 0.25);
-      border: 2px dashed #ef4444;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
+      background: rgba(127, 29, 29, 0.25); border: 2px dashed #ef4444; border-radius: 12px; padding: 20px; margin: 20px 0;
     }
-
     .proibidos-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #f87171;
-      font-family: var(--font-display);
-      font-size: 16px;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 10px;
+      display: flex; align-items: center; gap: 10px; color: #f87171;
+      font-family: var(--font-display); font-size: 16px; font-weight: 700; text-transform: uppercase; margin-bottom: 10px;
     }
-
-    .proibidos-items {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
+    .proibidos-items { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
     .proibido-pill {
-      background: #450a0a;
-      border: 1px solid #b91c1c;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-family: var(--font-tactical);
-      font-size: 15px;
-      font-weight: 700;
-      color: #fca5a5;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      background: #450a0a; border: 1px solid #b91c1c; padding: 8px 14px; border-radius: 6px;
+      font-family: var(--font-tactical); font-size: 15px; font-weight: 700; color: #fca5a5;
+      display: flex; align-items: center; gap: 8px;
     }
-
     .tatico-flow {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 14px;
-      margin-bottom: 25px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin-bottom: 25px;
     }
-
     .tatico-step {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-top: 3px solid var(--red-primary);
-      border-radius: 10px;
-      padding: 16px;
+      background: var(--bg-card); border: 1px solid var(--border-subtle);
+      border-top: 3px solid var(--red-primary); border-radius: 10px; padding: 16px;
     }
-
     .tatico-step .step-num {
-      font-family: var(--font-display);
-      font-size: 13px;
-      color: var(--red-bright);
-      font-weight: 700;
-      margin-bottom: 6px;
+      font-family: var(--font-display); font-size: 13px; color: var(--red-bright); font-weight: 700; margin-bottom: 6px;
     }
-
-    .tatico-step h4 {
-      font-family: var(--font-tactical);
-      font-size: 16px;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 6px;
-    }
-
-    .tatico-step p {
-      font-size: 13.5px;
-      color: #9ca3af;
-      line-height: 1.5;
-    }
-
+    .tatico-step h4 { font-family: var(--font-tactical); font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .tatico-step p { font-size: 13.5px; color: #9ca3af; line-height: 1.5; }
     .adv-table-wrap {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      overflow-x: auto;
-      margin-top: 15px;
+      background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 12px; overflow-x: auto; margin-top: 15px;
     }
-
-    .adv-table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      min-width: 500px;
-    }
-
+    .adv-table { width: 100%; border-collapse: collapse; text-align: left; min-width: 500px; }
     .adv-table th {
-      background: rgba(230, 25, 25, 0.15);
-      font-family: var(--font-tactical);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #ff6b6b;
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--border-red);
+      background: rgba(230, 25, 25, 0.15); font-family: var(--font-tactical); font-size: 14px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase; color: #ff6b6b; padding: 14px 16px; border-bottom: 1px solid var(--border-red);
     }
-
-    .adv-table td {
-      padding: 14px 16px;
-      border-bottom: 1px solid var(--border-subtle);
-      font-size: 14px;
-      color: #d1d5db;
-    }
-
-    .adv-badge {
-      font-family: var(--font-display);
-      font-size: 11px;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: 4px;
-      display: inline-block;
-    }
-
+    .adv-table td { padding: 14px 16px; border-bottom: 1px solid var(--border-subtle); font-size: 14px; color: #d1d5db; }
+    .adv-badge { font-family: var(--font-display); font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; display: inline-block; }
     .adv-1 { background: #1e3a8a; color: #93c5fd; }
     .adv-2 { background: #78350f; color: #fde68a; }
     .adv-3 { background: #831843; color: #fbcfe8; }
     .adv-4 { background: #7f1d1d; color: #fca5a5; }
-
-    .calc-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-subtle);
-      border-radius: 12px;
-      padding: 20px;
-    }
-
-    .calc-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 12px;
-      margin: 15px 0;
-    }
-
-    .input-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .input-group label {
-      font-family: var(--font-tactical);
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: #9ca3af;
-    }
-
-    .input-group input {
-      background: rgba(7, 8, 10, 0.8);
-      border: 1px solid var(--border-subtle);
-      color: #fff;
-      padding: 10px;
-      border-radius: 6px;
-      font-family: var(--font-display);
-      font-size: 15px;
-      outline: none;
-    }
-
-    .input-group input:focus {
-      border-color: var(--red-bright);
-    }
-
-    .calc-result {
-      margin-top: 15px;
-      padding: 14px 18px;
-      border-radius: 8px;
-      font-family: var(--font-tactical);
-      font-size: 16px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .calc-result.safe {
-      background: rgba(16, 185, 129, 0.15);
-      border: 1px solid #10b981;
-      color: #34d399;
-    }
-
-    .calc-result.danger {
-      background: rgba(239, 68, 68, 0.2);
-      border: 1px solid #ef4444;
-      color: #f87171;
-    }
-
     footer {
-      margin-top: 50px;
-      border-top: 1px solid var(--border-subtle);
-      padding: 25px 20px;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 13px;
+      margin-top: 50px; border-top: 1px solid var(--border-subtle); padding: 25px 20px;
+      text-align: center; color: var(--text-muted); font-size: 13px;
     }
-
-    footer strong {
-      color: #fff;
-      font-family: var(--font-display);
+    footer strong { color: #fff; font-family: var(--font-display); }
+    @media (max-width: 768px) {
+      .rules-grid { grid-template-columns: 1fr; }
+      .nav-tabs { flex-direction: column; }
+      .nav-btn { width: 100%; justify-content: center; }
     }
   </style>
 </head>
 <body>
-
   <div class="container">
     <header>
       <div class="badge-status">
         <span class="dot"></span>
         SISTEMA OPERACIONAL ATIVO • CIDADE VALLEY
       </div>
-      
       <div class="logo-wrapper">
-        <img src="https://i.imgur.com/8Qe5k6M.png" alt="Canadá Área de Risco 38" class="logo-img">
+        <img src="canadaaaaa.jpg" alt="Canadá Área de Risco 38" class="logo-img" onerror="this.onerror=null;this.src='https://cdn.discordapp.com/attachments/1569121357428432906/canadaaaaa.jpg';">
       </div>
-
       <h1 class="main-title">CANADÁ ÁREA 38</h1>
-      <p class="sub-title">DIRETRIZES OFICIAIS • DOUTRINA TÁTICA • ANTI-CAIXA 2</p>
+      <p class="sub-title">MANUAL DE REGRAS CANADÁ</p>
 
       <div class="quick-stats">
         <div class="stat-pill">
@@ -646,190 +266,99 @@
         <button class="nav-btn" onclick="switchTab(event, 'taxas-adv')">
           <i class="fa-solid fa-scale-balanced"></i> Advertências & Taxas
         </button>
-        <button class="nav-btn" onclick="switchTab(event, 'simulador')">
-          <i class="fa-solid fa-calculator"></i> Simulador de Cotas
-        </button>
       </nav>
     </header>
 
     <!-- TAB 1: REGRAS DA FACÇÃO -->
     <section id="regras-fac" class="tab-content active">
       <h2 class="section-title"><i class="fa-solid fa-book-skull"></i> 1. REGRAS DA FAC</h2>
-
       <div class="rules-grid">
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #01</span>
-            <span class="rule-tag tag-norm">CONDUTA</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #01</span><span class="rule-tag tag-norm">CONDUTA</span></div>
           <p class="rule-text">Todos devem manter o <strong>respeito mútuo</strong>, do 00 ao membro. Conflitos não serão tolerados.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #02</span>
-            <span class="rule-tag tag-norm">HIERARQUIA</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #02</span><span class="rule-tag tag-norm">HIERARQUIA</span></div>
           <p class="rule-text">Respeite a <strong>hierarquia da facção</strong>.</p>
         </div>
-
         <div class="rule-card warning">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #03</span>
-            <span class="rule-tag tag-adv">DISCIPLINA</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #03</span><span class="rule-tag tag-adv">DISCIPLINA</span></div>
           <p class="rule-text"><strong>PROIBIDO QUALQUER TIPO DE ZARALHO</strong> dentro da facção.</p>
         </div>
-
         <div class="rule-card danger">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #04</span>
-            <span class="rule-tag tag-ban">BAN & PD</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #04</span><span class="rule-tag tag-ban">BAN & PD</span></div>
           <p class="rule-text"><strong>É PROIBIDO PEGAR FARM NO BAÚ (PLÁSTICO)</strong>. Quem pegar tomará PD da fac e ban da cidade por Caixa 2.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #05</span>
-            <span class="rule-tag tag-norm">VENDAS</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #05</span><span class="rule-tag tag-norm">VENDAS</span></div>
           <p class="rule-text">Proibido se meter em vendas de outros membros. A venda é de quem atendeu primeiro, não interfira.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #06</span>
-            <span class="rule-tag tag-norm">COMUNICAÇÃO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #06</span><span class="rule-tag tag-norm">COMUNICAÇÃO</span></div>
           <p class="rule-text">Conectar na <strong>RÁDIO 131</strong> enquanto estiver in-game.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #07</span>
-            <span class="rule-tag tag-norm">TÁTICO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #07</span><span class="rule-tag tag-norm">TÁTICO</span></div>
           <p class="rule-text">Caso saia para pista/ação, deve-se conectar na <strong>RÁDIO 132</strong>.</p>
         </div>
-
         <div class="rule-card danger">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #08</span>
-            <span class="rule-tag tag-ban">GRAVE</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #08</span><span class="rule-tag tag-ban">GRAVE</span></div>
           <p class="rule-text">É extremamente proibido trazer ação para a facção. Se sair em horário de pista e tomar voz, tente dar fuga ou vá para o <em>"desce e quebra"</em>.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #09</span>
-            <span class="rule-tag tag-norm">SEGURANÇA</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #09</span><span class="rule-tag tag-norm">SEGURANÇA</span></div>
           <p class="rule-text">É PROIBIDO levar veículos do legal para dentro da facção.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #10</span>
-            <span class="rule-tag tag-norm">UNIFORME</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #10</span><span class="rule-tag tag-norm">UNIFORME</span></div>
           <p class="rule-text">É OBRIGATÓRIO o uso da <strong>MOCHILA 10 4</strong> estando dentro da facção ou em pista/ações.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #11</span>
-            <span class="rule-tag tag-norm">ORGANIZAÇÃO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #11</span><span class="rule-tag tag-norm">ORGANIZAÇÃO</span></div>
           <p class="rule-text">É PROIBIDO deixar veículos parados em locais de movimentação da facção (PÁTIO).</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #12</span>
-            <span class="rule-tag tag-norm">SEGURANÇA</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #12</span><span class="rule-tag tag-norm">SEGURANÇA</span></div>
           <p class="rule-text"><strong>MANTENHA SEMPRE OS PORTÕES DA FAC FECHADOS.</strong></p>
         </div>
-
         <div class="rule-card danger">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #13</span>
-            <span class="rule-tag tag-adv">PUNIÇÃO (ADV)</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #13</span><span class="rule-tag tag-adv">PUNIÇÃO (ADV)</span></div>
           <p class="rule-text">PROIBIDO matar ou saquear membros da facção. Preze pela harmonia (ADV).</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #14</span>
-            <span class="rule-tag tag-norm">RESPEITO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #14</span><span class="rule-tag tag-norm">RESPEITO</span></div>
           <p class="rule-text">É PROIBIDO desmanchar carros de membros da facção. Se o carro estiver parado DENTRO DA FAC, não desmanche.</p>
         </div>
-
         <div class="rule-card danger">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #15</span>
-            <span class="rule-tag tag-ban">MERCADO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #15</span><span class="rule-tag tag-ban">MERCADO</span></div>
           <p class="rule-text">É EXTREMAMENTE PROIBIDA A VENDA DE ITENS COM VALOR ABAIXO DA TABELA DE PREÇO.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #16</span>
-            <span class="rule-tag tag-norm">AVISO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #16</span><span class="rule-tag tag-norm">AVISO</span></div>
           <p class="rule-text">Não nos responsabilizamos por farms entregues em mãos de pessoas não autorizadas.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #17</span>
-            <span class="rule-tag tag-norm">REGISTRO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #17</span><span class="rule-tag tag-norm">REGISTRO</span></div>
           <p class="rule-text">Não nos responsabilizamos por farms não registrados via Ticket, lembrem sempre de registrar.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #18</span>
-            <span class="rule-tag tag-norm">COMÉRCIO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #18</span><span class="rule-tag tag-norm">COMÉRCIO</span></div>
           <p class="rule-text">Não é permitido matar ou enganar clientes.</p>
         </div>
-
         <div class="rule-card danger">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #19</span>
-            <span class="rule-tag tag-pd">PD DA FAC</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #19</span><span class="rule-tag tag-pd">PD DA FAC</span></div>
           <p class="rule-text">Proibido utilizar o Discord da fac ou a própria fac dentro do jogo para promover, incentivar ou chamar membros para outras cidades (PD).</p>
         </div>
-
         <div class="rule-card warning">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #20</span>
-            <span class="rule-tag tag-adv">FISCALIZAÇÃO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #20</span><span class="rule-tag tag-adv">FISCALIZAÇÃO</span></div>
           <p class="rule-text">Retire do baú apenas o necessário e sempre seguindo as REGRAS DO BAÚ para que você não tome ban da cidade por Caixa 2.</p>
         </div>
-
         <div class="rule-card">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #21</span>
-            <span class="rule-tag tag-norm">ORGANIZAÇÃO</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #21</span><span class="rule-tag tag-norm">ORGANIZAÇÃO</span></div>
           <p class="rule-text">Proibido guardar itens pessoais no baú da fac. O baú é para uso exclusivo de itens da fac.</p>
         </div>
-
         <div class="rule-card danger">
-          <div class="rule-header">
-            <span class="rule-number">REGRA #22</span>
-            <span class="rule-tag tag-ban">SANÇÕES</span>
-          </div>
+          <div class="rule-header"><span class="rule-number">REGRA #22</span><span class="rule-tag tag-ban">SANÇÕES</span></div>
           <p class="rule-text">O NÃO CUMPRIMENTO DAS REGRAS RESULTARÁ EM ADV OU PD DA FACÇÃO.</p>
         </div>
       </div>
@@ -838,7 +367,6 @@
     <!-- TAB 2: REGRAS DO BAÚ -->
     <section id="regras-bau" class="tab-content">
       <h2 class="section-title"><i class="fa-solid fa-boxes-packing"></i> 2. REGRAS DO BAÚ</h2>
-
       <div class="bau-hero">
         <h3><i class="fa-solid fa-triangle-exclamation"></i> QUANTIDADE MÁXIMA DE RETIRADA POR DIA</h3>
         <p>Caso retire a mais, será denunciado e levará <strong>BAN POR CAIXA 2</strong>.</p>
@@ -851,35 +379,30 @@
           <div class="item-limit">10x</div>
           <div class="item-desc">Máximo por dia para uso</div>
         </div>
-
         <div class="cota-card">
           <i class="fa-solid fa-bag-shopping"></i>
           <div class="item-name">Mochilas</div>
           <div class="item-limit">10x</div>
           <div class="item-desc">Máximo por dia</div>
         </div>
-
         <div class="cota-card">
           <i class="fa-solid fa-mobile-screen"></i>
           <div class="item-name">Celulares</div>
           <div class="item-limit">05x</div>
           <div class="item-desc">Máximo por dia</div>
         </div>
-
         <div class="cota-card">
           <i class="fa-solid fa-walkie-talkie"></i>
           <div class="item-name">Rádios</div>
           <div class="item-limit">05x</div>
           <div class="item-desc">Máximo por dia</div>
         </div>
-
         <div class="cota-card">
           <i class="fa-solid fa-shirt"></i>
           <div class="item-name">Roupas</div>
           <div class="item-limit">05x</div>
           <div class="item-desc">Máximo por dia</div>
         </div>
-
         <div class="cota-card">
           <i class="fa-solid fa-wrench"></i>
           <div class="item-name">Kit Reparo</div>
@@ -909,26 +432,22 @@
     <!-- TAB 3: DOUTRINA DO TÁTICO -->
     <section id="doutrina-tatico" class="tab-content">
       <h2 class="section-title"><i class="fa-solid fa-shield-halved"></i> 3. REGRAS DO TÁTICO</h2>
-
       <div class="tatico-flow">
         <div class="tatico-step">
           <div class="step-num">DIRETRIZ #01</div>
           <h4>Respeito à Liderança</h4>
           <p>Sempre respeitar a liderança, tanto do tático quanto da facção.</p>
         </div>
-
         <div class="tatico-step">
           <div class="step-num">DIRETRIZ #02</div>
           <h4>Postura e Ajuda</h4>
           <p>Sempre manter a postura de tático e ajudar dentro da org, sendo farmando se necessário ou ajudando os mais novos.</p>
         </div>
-
         <div class="tatico-step">
           <div class="step-num">DIRETRIZ #03</div>
           <h4>Uso do Baú</h4>
           <p>Nunca pegar coisas do baú sem motivo que envolva a fac e suas dinâmicas, tudo que entra e sai do baú a liderança tem o registro.</p>
         </div>
-
         <div class="tatico-step">
           <div class="step-num">DIRETRIZ #04</div>
           <h4>Honra</h4>
@@ -953,7 +472,6 @@
     <!-- TAB 4: ADVERTÊNCIAS & TAXAS -->
     <section id="taxas-adv" class="tab-content">
       <h2 class="section-title"><i class="fa-solid fa-scale-unbalanced-flip"></i> 4. REGRAS SOBRE ADVERTÊNCIAS</h2>
-
       <div class="bau-hero">
         <h3><i class="fa-solid fa-receipt"></i> DIRETRIZES DE PUNIÇÃO</h3>
         <p>• O membro tático pode tomar até <strong>3 advertências</strong>, sendo a 4ª motivo de exoneração da equipe tática.<br>
@@ -1005,56 +523,9 @@
       </div>
     </section>
 
-    <!-- TAB 5: SIMULADOR DE COTAS -->
-    <section id="simulador" class="tab-content">
-      <h2 class="section-title"><i class="fa-solid fa-calculator"></i> 5. SIMULADOR DE COTAS</h2>
-
-      <div class="calc-box">
-        <p style="color: #9ca3af; font-size: 14px; margin-bottom: 15px;">
-          Digite as quantidades retiradas para testar a conformidade com as regras diárias do baú:
-        </p>
-
-        <div class="calc-grid">
-          <div class="input-group">
-            <label>Cristais (Max: 10)</label>
-            <input type="number" id="inp-cristal" min="0" placeholder="0" oninput="calcularStatus()">
-          </div>
-          <div class="input-group">
-            <label>Mochilas (Max: 10)</label>
-            <input type="number" id="inp-mochila" min="0" placeholder="0" oninput="calcularStatus()">
-          </div>
-          <div class="input-group">
-            <label>Celulares (Max: 5)</label>
-            <input type="number" id="inp-celular" min="0" placeholder="0" oninput="calcularStatus()">
-          </div>
-          <div class="input-group">
-            <label>Rádios (Max: 5)</label>
-            <input type="number" id="inp-radio" min="0" placeholder="0" oninput="calcularStatus()">
-          </div>
-          <div class="input-group">
-            <label>Roupas (Max: 5)</label>
-            <input type="number" id="inp-roupa" min="0" placeholder="0" oninput="calcularStatus()">
-          </div>
-          <div class="input-group">
-            <label>Kit Reparo (Max: 5)</label>
-            <input type="number" id="inp-kit" min="0" placeholder="0" oninput="calcularStatus()">
-          </div>
-          <div class="input-group">
-            <label style="color: #ef4444;">Plástico / Plastico2</label>
-            <input type="number" id="inp-farm" min="0" placeholder="0" oninput="calcularStatus()" style="border-color: rgba(239, 68, 68, 0.5);">
-          </div>
-        </div>
-
-        <div id="resultado-calc" class="calc-result safe">
-          <span><i class="fa-solid fa-circle-check"></i> SITUAÇÃO REGULAR</span>
-          <span>DENTRO DO LIMITE PERMITIDO</span>
-        </div>
-      </div>
-    </section>
-
     <footer>
       <p><strong>CANADÁ ÁREA DE RISCO 38</strong> • TRADIÇÃO, RESPEITO & DOUTRINA TÁTICA</p>
-      <p style="margin-top: 6px;">Diretrizes Oficiais • Cidade Valley</p>
+      <p style="margin-top: 6px;">Manual de Regras Canadá • Cidade Valley</p>
     </footer>
   </div>
 
@@ -1074,49 +545,6 @@
 
       if (evt && evt.currentTarget) {
         evt.currentTarget.classList.add('active');
-      }
-    }
-
-    function calcularStatus() {
-      const cristal = parseInt(document.getElementById('inp-cristal').value) || 0;
-      const mochila = parseInt(document.getElementById('inp-mochila').value) || 0;
-      const celular = parseInt(document.getElementById('inp-celular').value) || 0;
-      const radio = parseInt(document.getElementById('inp-radio').value) || 0;
-      const roupa = parseInt(document.getElementById('inp-roupa').value) || 0;
-      const kit = parseInt(document.getElementById('inp-kit').value) || 0;
-      const farm = parseInt(document.getElementById('inp-farm').value) || 0;
-
-      const resBox = document.getElementById('resultado-calc');
-
-      if (farm > 0) {
-        resBox.className = 'calc-result danger';
-        resBox.innerHTML = `
-          <span><i class="fa-solid fa-triangle-exclamation"></i> <strong>ALERTA CRÍTICO:</strong> PROIBIDO RETIRAR PLÁSTICO DO BAÚ!</span>
-          <span>RISCO DE BAN POR CAIXA 2</span>
-        `;
-        return;
-      }
-
-      const infracoes = [];
-      if (cristal > 10) infracoes.push(`Cristal (+${cristal - 10})`);
-      if (mochila > 10) infracoes.push(`Mochila (+${mochila - 10})`);
-      if (celular > 5) infracoes.push(`Celular (+${celular - 5})`);
-      if (radio > 5) infracoes.push(`Rádio (+${radio - 5})`);
-      if (roupa > 5) infracoes.push(`Roupa (+${roupa - 5})`);
-      if (kit > 5) infracoes.push(`Kit Reparo (+${kit - 5})`);
-
-      if (infracoes.length > 0) {
-        resBox.className = 'calc-result danger';
-        resBox.innerHTML = `
-          <span><i class="fa-solid fa-triangle-exclamation"></i> <strong>COTA EXCEDIDA:</strong> ${infracoes.join(', ')}</span>
-          <span>SUJEITO A ADVERTÊNCIA / BAN</span>
-        `;
-      } else {
-        resBox.className = 'calc-result safe';
-        resBox.innerHTML = `
-          <span><i class="fa-solid fa-circle-check"></i> SITUAÇÃO REGULAR</span>
-          <span>DENTRO DO LIMITE PERMITIDO</span>
-        `;
       }
     }
   </script>
